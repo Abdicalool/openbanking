@@ -1,17 +1,20 @@
-package abdi.example.openBankin.transaction;
+package abdi.example.openBankin.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@SuperBuilder
 public class TransactionDTO {
+    private Integer id;
     private String type;
-    private LocalDateTime date;
+    private LocalDate date;
     private int accountNumber;
     private String currency;
     private double amount;

@@ -1,6 +1,6 @@
 package abdi.example.openBankin.service;
 
-import abdi.example.openBankin.transaction.TransactionDTO;
+import abdi.example.openBankin.entity.TransactionDTO;
 
 import java.util.List;
 
